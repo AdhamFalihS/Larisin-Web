@@ -10,11 +10,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
+  <!-- External Libraries for Animations & Smooth Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  
   <!-- Custom CSS & Fonts -->
   <link rel="stylesheet" href="./index.css">
   <script src="./index.js" defer></script>
 </head>
 <body>
+
+  <!-- Cinematic Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">Laris.in</div>
+      <div class="preloader-counter" id="preloader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- Pure CSS Fluid Background -->
+  <div class="fluid-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
   <!-- Floating Navigation Bar -->
   <header class="navbar-wrapper">
