@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laris.in — Aplikasi Kasir & POS Tercepat untuk Bisnis Anda</title>
+  <meta name="description" content="Laris.in adalah aplikasi kasir digital modern (POS) berbasis cloud untuk ritel & F&B. Maksimalkan kecepatan transaksi, manajemen stok real-time, dan kenyamanan operasional toko Anda.">
+  
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Custom CSS & Fonts -->
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-navigation">
+      <a href="#" class="logo" id="nav-logo">
+        <div class="logo-icon-wrapper">L</div>
+        <span>Laris.in</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#fitur" class="nav-link" id="link-fitur">Fitur Unggulan</a>
+        <a href="#prinsip" class="nav-link" id="link-prinsip">Prinsip Desain</a>
+        <a href="#harga" class="nav-link" id="link-harga">Paket & Harga</a>
+        <a href="#testimoni" class="nav-link" id="link-testimoni">Kisah Sukses</a>
+        <a href="#faq" class="nav-link" id="link-faq">FAQ</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="#harga" class="btn btn-nav" id="nav-cta-btn">Coba Gratis ✦</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Buka Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero-section">
+      <div class="container hero-content">
+        <div class="badge" id="hero-badge">
+          <span>✦ BERSAMA LARIS.IN — POS TERCEPAT & PALING RELIABEL</span>
+        </div>
+        
+        <!-- Single H1 for SEO Best Practices -->
+        <h1 id="hero-headline">Transformasi Mesin Kasir Anda.<br>Lebih Cepat. Lebih Laris.</h1>
+        
+        <p class="subtitle" id="hero-subtitle">
+          Sistem kasir digital modern berbasis cloud untuk bisnis retail & F&B. Dirancang khusus untuk kecepatan transaksi di lapangan, manajemen stok real-time, dan laporan laba otomatis.
+        </p>
+
+        <div class="hero-cta" id="hero-cta-group">
+          <a href="#harga" class="btn btn-hero-primary" id="btn-hero-start">
+            <span>Mulai Sekarang — Gratis</span>
+            <div class="icon-circle"><span class="material-symbols-outlined">arrow_forward</span></div>
+          </a>
+          <a href="#fitur" class="btn btn-hero-secondary" id="btn-hero-learn">
+            <span>Pelajari Lebih Lanjut</span>
+            <div class="icon-circle"><span class="material-symbols-outlined">arrow_forward</span></div>
+          </a>
+        </div>
+
+        <!-- Realistic Floating Dummy Phone & Laptop Showcase (With Horizon Overlap Clipping) -->
+        <div class="phones-showcase" id="phones-dummy-section">
+          
+          <!-- Phone Mockup (Left - POS / Kasir Screen) -->
+          <div class="phone-mockup phone-left" id="phone-kasir">
+            <div class="phone-screen">
+              <!-- iPhone Top Status Bar & Dynamic Island -->
+              <div class="status-bar">
+                <span>09:57</span>
+                <div class="dynamic-island"></div>
+                <div class="status-icons">
+                  <span class="material-symbols-outlined" style="font-size:14px;">signal_cellular_4_bar</span>
+                  <span class="material-symbols-outlined" style="font-size:14px;">wifi</span>
+                  <div class="battery"></div>
+                </div>
+              </div>
+
+              <!-- Laris.in Kasir App Top Bar -->
+              <div class="phone-topbar">
+                <div class="phone-brand">Laris.in</div>
+                <div class="phone-time">09:57</div>
+                <div class="phone-help"><span class="material-symbols-outlined" style="font-size:18px;">help_outline</span></div>
+              </div>
+
+              <!-- Kasir App Body -->
+              <div class="phone-body">
+                <div class="dummy-search">
+                  <span class="material-symbols-outlined" style="font-size:20px;">search</span>
+                  <span class="text">Cari produk...</span>
+                  <span class="material-symbols-outlined" style="font-size:20px;">qr_code_scanner</span>
+                </div>
+
+                <div class="dummy-chips">
+                  <div class="dummy-chip active">Semua</div>
+                  <div class="dummy-chip">baju</div>
+                  <div class="dummy-chip">minuman</div>
+                  <div class="dummy-chip">makanan</div>
+                </div>
+
+                <!-- Dummy Product Card matching user screenshot -->
+                <div class="dummy-product-card">
+                  <div class="dummy-prod-img">👨🏽‍💼</div>
+                  <div class="dummy-prod-title">adham</div>
+                  <div class="dummy-prod-price-row">
+                    <span class="dummy-prod-price">Rp 20.000</span>
+                    <div class="dummy-btn-add">+</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Laris.in App Bottom Nav -->
+              <div class="dummy-bottom-nav">
+                <div class="nav-tab active">
+                  <div class="tab-icon"><span class="material-symbols-outlined" style="font-size:22px;">point_of_sale</span></div>
+                  <span>Register</span>
+                </div>
+                <div class="nav-tab">
+                  <div class="tab-icon"><span class="material-symbols-outlined" style="font-size:22px;">inventory_2</span></div>
+                  <span>Inventory</span>
+                </div>
+                <div class="nav-tab">
+                  <div class="tab-icon"><span class="material-symbols-outlined" style="font-size:22px;">bar_chart</span></div>
+                  <span>Laporan</span>
+                </div>
+                <div class="nav-tab">
+                  <div class="tab-icon"><span class="material-symbols-outlined" style="font-size:22px;">settings</span></div>
+                  <span>Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laptop Mockup (Right - Admin Dashboard & Laporan Penjualan) -->
+          <div class="laptop-mockup" id="laptop-laporan">
+            <div class="webcam-dot"></div>
+            <div class="laptop-screen">
+              <!-- Desktop Top Bar -->
+              <div class="desktop-topbar">
+                <div class="window-dots">
+                  <div class="dot dot-red"></div>
+                  <div class="dot dot-yellow"></div>
+                  <div class="dot dot-green"></div>
+                </div>
+                <div class="desktop-url">laris.in/dashboard/laporan</div>
+                <div class="desktop-user">
+                  <div class="desktop-avatar">A</div>
+                  <span>Admin Toko</span>
+                </div>
+              </div>
+
+              <!-- Desktop Main Layout -->
+              <div class="desktop-layout">
+                <!-- Sidebar -->
+                <div class="desktop-sidebar">
+                  <div class="sidebar-item">
+                    <span class="material-symbols-outlined" style="font-size:18px;">point_of_sale</span>
+                    <span>Kasir</span>
+                  </div>
+                  <div class="sidebar-item">
+                    <span class="material-symbols-outlined" style="font-size:18px;">inventory_2</span>
+                    <span>Inventory</span>
+                  </div>
+                  <div class="sidebar-item active">
+                    <span class="material-symbols-outlined" style="font-size:18px;">bar_chart</span>
+                    <span>Laporan</span>
+                  </div>
+                  <div class="sidebar-item">
+                    <span class="material-symbols-outlined" style="font-size:18px;">settings</span>
+                    <span>Settings</span>
+                  </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="desktop-main">
+                  <div class="desktop-header">
+                    <h3>Laporan Penjualan</h3>
+                    <div class="dummy-chips" style="padding:0;">
+                      <div class="dummy-chip active">Hari Ini</div>
+                      <div class="dummy-chip">7 Hari</div>
+                      <div class="dummy-chip">30 Hari</div>
+                    </div>
+                  </div>
+
+                  <div class="desktop-cards-grid">
+                    <!-- Best Seller Card -->
+                    <div class="dummy-bestseller">
+                      <div class="dummy-card-header">Produk Terlaris</div>
+                      <div class="bestseller-item">
+                        <div class="bestseller-left">
+                          <div class="bestseller-badge">#1</div>
+                          <div class="bestseller-info">
+                            <h5>adham</h5>
+                            <p>4 terjual</p>
+                          </div>
+                        </div>
+                        <div class="bestseller-price">Rp80.000</div>
+                      </div>
+                    </div>
+
+                    <!-- Payment Methods Donut Chart Card -->
+                    <div class="dummy-donut-card">
+                      <div class="dummy-card-header">Metode Pembayaran</div>
+                      <div class="donut-chart-wrapper">
+                        <div class="donut-ring">
+                          <div class="donut-inner">
+                            <span class="lbl">TOTAL</span>
+                            <span class="val">80 rb</span>
+                          </div>
+                        </div>
+                        <div class="donut-summary">
+                          <h6>Total Pemasukan</h6>
+                          <h4>Rp80.000</h4>
+                          <p>2 transaksi</p>
+                        </div>
+                      </div>
+
+                      <div class="payment-breakdown">
+                        <div class="payment-row">
+                          <div class="payment-lbl"><div class="indicator ind-tunai"></div> Tunai</div>
+                          <div class="payment-val">Rp20.000 <span>CASH (25.0%)</span></div>
+                        </div>
+                        <div class="payment-row">
+                          <div class="payment-lbl"><div class="indicator ind-qris"></div> QRIS</div>
+                          <div class="payment-val">Rp60.000 <span>QRIS (75.0%)</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Partner / Trust Section -->
+    <section class="partners" id="trust-section">
+      <div class="container">
+        <p>Dipercaya oleh ribuan toko ritel, kafe, dan F&B di seluruh Indonesia</p>
+        <div class="partner-logos">
+          <div class="partner-logo"><span class="material-symbols-outlined">storefront</span> Kopi Kenangan Kita</div>
+          <div class="partner-logo"><span class="material-symbols-outlined">restaurant</span> Warung Geprek Juara</div>
+          <div class="partner-logo"><span class="material-symbols-outlined">local_mall</span> Butik Gaya Nusantara</div>
+          <div class="partner-logo"><span class="material-symbols-outlined">bakery_dining</span> Toko Roti Sari Rasa</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section (Bento Grid) -->
+    <section class="section features" id="fitur">
+      <div class="container">
+        <div class="section-header">
+          <h2>Fitur Unggulan untuk Pertumbuhan Bisnis Anda</h2>
+          <p>Dirancang dari pengalaman lapangan nyata untuk memastikan transaksi lancar, pengawasan stok akurat, dan kepuasan pelanggan.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Box 1: Speed First UI -->
+          <div class="bento-item col-span-2" id="bento-speed">
+            <div class="bento-icon"><span class="material-symbols-outlined">bolt</span></div>
+            <div class="bento-content">
+              <h3>Speed First: Transaksi Selesai dalam 1-2 Tap</h3>
+              <p>Layar utama dirancang dengan tombol SCAN besar, integrasi numpad langsung, dan pencarian kilat. Mengurangi antrian panjang di meja kasir bahkan pada jam sibuk.</p>
+            </div>
+            <div class="bento-visual">
+              <div class="stat-box">
+                <div class="stat-header">
+                  <span class="stat-title">RATA-RATA WAKTU TRANSAKSI (DETIK)</span>
+                  <span class="stat-value">4.2 Detik</span>
+                </div>
+                <div class="stat-bars">
+                  <div class="bar h-1" title="POS Lama"></div>
+                  <div class="bar h-2" title="Manual"></div>
+                  <div class="bar h-3" title="Sistem Lain"></div>
+                  <div class="bar h-5" title="Laris.in POS"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box 2: Manajemen Stok Pintar -->
+          <div class="bento-item" id="bento-stock">
+            <div class="bento-icon"><span class="material-symbols-outlined">inventory_2</span></div>
+            <div class="bento-content">
+              <h3>Manajemen Stok Pintar & Peringatan Otomatis</h3>
+              <p>Dapatkan peringatan langsung saat stok produk tersisa kurang dari 5 unit. Manajemen barang masuk, barcode kustom, dan audit gudang jauh lebih praktis.</p>
+            </div>
+          </div>
+
+          <!-- Bento Box 3: QRIS & Pembayaran -->
+          <div class="bento-item" id="bento-qris">
+            <div class="bento-icon"><span class="material-symbols-outlined">qr_code_scanner</span></div>
+            <div class="bento-content">
+              <h3>Integrasi QRIS & Berbagai Pembayaran</h3>
+              <p>Terima pembayaran Tunai, QRIS dinamis, hingga Transfer Bank. Pembukuan otomatis rapi tanpa perlu rekonsiliasi manual yang memusingkan di malam hari.</p>
+            </div>
+          </div>
+
+          <!-- Bento Box 4: Laporan Penjualan -->
+          <div class="bento-item col-span-2" id="bento-report">
+            <div class="bento-icon"><span class="material-symbols-outlined">bar_chart</span></div>
+            <div class="bento-content">
+              <h3>Dashboard Omset & Analitik Penjualan Real-time</h3>
+              <p>Pantau omset harian, produk terlaris (Best Sellers), dan performa shift kasir dari manapun. Ekspor laporan dalam bentuk PDF atau Excel hanya dengan satu klik.</p>
+            </div>
+            <div class="bento-visual">
+              <div class="stat-box">
+                <div class="stat-header">
+                  <span class="stat-title">PRODUK TERLARIS MINGGU INI</span>
+                  <span class="stat-value">+48% Pertumbuhan</span>
+                </div>
+                <div class="stat-bars">
+                  <div class="bar h-2" title="Senin"></div>
+                  <div class="bar h-3" title="Selasa"></div>
+                  <div class="bar h-1" title="Rabu"></div>
+                  <div class="bar h-4" title="Kamis"></div>
+                  <div class="bar h-5" title="Jumat"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="section principles" id="prinsip">
+      <div class="container">
+        <div class="section-header">
+          <h2>Prinsip Desain Operasional Laris.in</h2>
+          <p>Setiap fitur dan antarmuka Laris.in dibangun melalui pengujian ketat di kondisi toko nyata.</p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-card" id="principle-1">
+            <div class="principle-number">01</div>
+            <h4>Clarity (Kejelasan)</h4>
+            <p>Informasi kritis seperti Total Tagihan dan kembalian selalu terlihat jelas di layar tanpa perlu scroll. Angka menggunakan font monospace untuk keterbacaan instan.</p>
+          </div>
+          <div class="principle-card" id="principle-2">
+            <div class="principle-number">02</div>
+            <h4>Touch-Friendly</h4>
+            <p>Target sentuh luas minimal 48x48dp sesuai kaidah ergonomi. Sangat nyaman diakses walau kasir bekerja dengan cepat atau layar dalam kondisi redup.</p>
+          </div>
+          <div class="principle-card" id="principle-3">
+            <div class="principle-number">03</div>
+            <h4>Forgiveness</h4>
+            <p>Mudah mengoreksi kesalahan ketik (undo). Dilengkapi sistem konfirmasi sebelum penghapusan keranjang, mencegah insiden terhapus tanpa sengaja.</p>
+          </div>
+          <div class="principle-card" id="principle-4">
+            <div class="principle-number">04</div>
+            <h4>Multi-Kasir & PIN</h4>
+            <p>Sistem otentikasi login aman menggunakan PIN 4-6 digit untuk pergantian kasir dalam hitungan detik. Hak akses Admin dan Staff terpisah dengan rapi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section (2 Perfectly Aligned Packages) -->
+    <section class="section pricing" id="harga">
+      <div class="container">
+        <div class="section-header">
+          <h2>Investasi Cerdas untuk Kemajuan Bisnis</h2>
+          <p>Pilih paket yang sesuai dengan tahapan bisnis Anda. Tanpa biaya tersembunyi, dapat ditingkatkan kapan saja.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Pricing Card 1: Paket Komunitas (Free) -->
+          <div class="pricing-card" id="tier-basic">
+            <div class="pricing-card-content">
+              <div class="pricing-header">
+                <h3>Paket Komunitas</h3>
+                <p>Solusi tepat untuk usaha kecil yang baru melangkah ke dunia digital.</p>
+              </div>
+              <div class="price-box">
+                <span class="currency">Rp</span>
+                <span class="amount">0</span>
+                <span class="period">/ selamanya</span>
+              </div>
+              <ul class="feature-list">
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> 1 Cabang / Toko</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Hingga 50 Produk</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Fitur Kasir & Cetak Struk</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Laporan Penjualan Standar</li>
+              </ul>
+            </div>
+            <a href="#fitur" class="btn btn-pricing-standard" id="btn-select-free">Mulai Versi Gratis</a>
+          </div>
+
+          <!-- Pricing Card 2: Paket Laris Pro (Rp 29.000) -->
+          <div class="pricing-card popular" id="tier-pro">
+            <div class="popular-badge">Paling Diminati</div>
+            <div class="pricing-card-content">
+              <div class="pricing-header">
+                <h3>Paket Laris Pro</h3>
+                <p>Didesain untuk bisnis ritel dan F&B yang berkembang pesat.</p>
+              </div>
+              <div class="price-box">
+                <span class="currency">Rp</span>
+                <span class="amount">29.000</span>
+                <span class="period">/ bulan</span>
+              </div>
+              <ul class="feature-list">
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Multi Kasir & Shift Keamanan PIN</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Produk & Transaksi Tanpa Batas</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Peringatan Stok Rendah Otomatis</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Integrasi QRIS & Transfer</li>
+                <li class="feature-item"><span class="material-symbols-outlined">check</span> Ekspor Laporan Lengkap (PDF/Excel)</li>
+              </ul>
+            </div>
+            <a href="#fitur" class="btn btn-pricing-popular" id="btn-select-pro">Mulai Paket Pro ✦</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimoni">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dipercaya oleh Pebisnis Sejati</h2>
+          <p>Lihat bagaimana Laris.in membantu pemilik usaha meningkatkan omset dan kerapihan manajemen.</p>
+        </div>
+
+        <div class="testi-grid">
+          <div class="testi-card" id="testi-1">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote">"Sejak pakai Laris.in, antrian di kedai kopi saya jadi jauh lebih cepat. Fitur scan dan perhitungan otomatisnya luar biasa responsif!"</p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h5>Adham / AD</h5>
+                <p>Pemilik Kedai Kopi Laris</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" id="testi-2">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote">"Manajemen stoknya sangat membantu! Dulu sering kehabisan bahan baku tanpa sadar, communal alert otomatis saat stok tersisa sedikit."</p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">B</div>
+              <div class="author-info">
+                <h5>Bunga Maharani</h5>
+                <p>Manajer Operasional Ritel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" id="testi-3">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote">"Sistem PIN login kasirnya praktis banget buat ganti shift karyawan. Pembukuan QRIS juga langsung sinkron di dashboard hp saya."</p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">D</div>
+              <div class="author-info">
+                <h5>Hendra Dharmawan</h5>
+                <p>Owner Resto Geprek Juara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pertanyaan yang Sering Diajukan</h2>
+          <p>Punya pertanyaan seputar cara kerja Laris.in? Temukan jawabannya di bawah ini.</p>
+        </div>
+
+        <div class="faq-wrapper">
+          <div class="faq-item active" id="faq-1">
+            <div class="faq-question">
+              <span>Apakah Laris.in bisa digunakan saat koneksi internet terputus (Offline)?</span>
+              <div class="faq-toggle-icon"><span class="material-symbols-outlined">expand_more</span></div>
+            </div>
+            <div class="faq-answer">
+              <p>Tentu saja! Laris.in dibekali kapabilitas auto-sync. Anda tetap bisa melakukan proses kasir dan mencetak struk secara offline. Saat koneksi internet kembali normal, seluruh data transaksi akan disinkronisasikan ke server cloud secara otomatis tanpa ribet.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-2">
+            <div class="faq-question">
+              <span>Printer struk apa saja yang didukung oleh Laris.in?</span>
+              <div class="faq-toggle-icon"><span class="material-symbols-outlined">expand_more</span></div>
+            </div>
+            <div class="faq-answer">
+              <p>Laris.in mendukung berbagai printer struk termal Bluetooth maupun USB berukuran 58mm hingga 80mm (seperti Xprinter XP-58 dan merek populer lainnya). Pengaturan koneksi sangat mudah dan dapat diakses langsung melalui menu Settings di aplikasi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-3">
+            <div class="faq-question">
+              <span>Apakah saya bisa memisahkan akses untuk Kasir dan Admin?</span>
+              <div class="faq-toggle-icon"><span class="material-symbols-outlined">expand_more</span></div>
+            </div>
+            <div class="faq-answer">
+              <p>Sangat bisa. Mode Kasir hanya dapat mengakses fungsi penjualan dan transaksi shift aktif. Sedangkan Mode Admin memiliki kewenangan penuh untuk mengakses laporan laba rugi, manajemen inventory produk, serta pengaturan otentikasi toko.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-4">
+            <div class="faq-question">
+              <span>Berapa lama waktu yang dibutuhkan untuk proses pendaftaran?</span>
+              <div class="faq-toggle-icon"><span class="material-symbols-outlined">expand_more</span></div>
+            </div>
+            <div class="faq-answer">
+              <p>Hanya membutuhkan waktu kurang মুসলমানদের 2 menit. Anda cukup mendaftarkan nama toko, memasukkan produk pertama Anda, dan aplikasi kasir Laris.in siap digunakan untuk bertransaksi detik itu juga!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="action-section">
+      <div class="container cta-content">
+        <h2 id="cta-header">Siap Membawa Bisnis Anda ke Level Berikutnya?</h2>
+        <p id="cta-sub">Bergabunglah dengan ribuan pengusaha sukses lainnya yang telah beralih ke Laris.in. Rasakan kecepatan dan kemudahannya sekarang juga.</p>
+        <div class="cta-buttons">
+          <a href="#fitur" class="btn btn-hero-secondary" id="btn-final-cta-start">
+            <span>Daftar Sekarang — Gratis</span>
+            <div class="icon-circle"><span class="material-symbols-outlined">arrow_forward</span></div>
+          </a>
+          <a href="#harga" class="btn btn-hero-primary" id="btn-final-cta-pricing">
+            <span>Lihat Paket & Harga</span>
+            <div class="icon-circle"><span class="material-symbols-outlined">arrow_forward</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon-wrapper">L</div>
+            <span>Laris.in</span>
+          </div>
+          <p>Sistem Kasir Digital (POS) terdepan di Indonesia. Menggabungkan kecepatan antarmuka, kestabilan sistem cloud, dan kelengkapan manajemen toko retail.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook" id="soc-fb"><span class="material-symbols-outlined">share</span></a>
+            <a href="#" class="social-link" aria-label="Instagram" id="soc-ig"><span class="material-symbols-outlined">photo_camera</span></a>
+            <a href="#" class="social-link" aria-label="Twitter" id="soc-tw"><span class="material-symbols-outlined">public</span></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Fitur POS</h4>
+          <div class="footer-links">
+            <a href="#fitur">Point of Sale</a>
+            <a href="#fitur">Manajemen Inventaris</a>
+            <a href="#fitur">Integrasi QRIS</a>
+            <a href="#fitur">Laporan Omset</a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Perusahaan</h4>
+          <div class="footer-links">
+            <a href="#prinsip">Tentang Kami</a>
+            <a href="#testimoni">Kisah Sukses</a>
+            <a href="#harga">Pusat Bantuan</a>
+            <a href="#faq">Karir</a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Dapatkan Tips Bisnis</h4>
+          <div class="newsletter-form" id="footer-newsletter">
+            <p>Berlangganan newsletter kami untuk panduan mengelola bisnis retail & F&B terkini.</p>
+            <div class="input-group">
+              <input type="email" placeholder="Masukkan email Anda..." aria-label="Email Newsletter" id="newsletter-input">
+              <button type="submit" id="btn-submit-newsletter">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Laris.in — Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="footer-legal">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat & Ketentuan</a>
+          <a href="#">Keamanan Cloud</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
