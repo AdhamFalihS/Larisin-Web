@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLenis();
   initPreloader(); // Replaces direct initGSAP to wait for preloader
   initNavbarScroll();
+  initMobileMenu();
   initFAQAccordion();
   initNewsletter();
   initDummyInteractions();
@@ -10,11 +11,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* =======================================================
+   0.5 Mobile Menu Toggle
+   ======================================================= */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById("mobile-menu-toggle");
+  const closeBtn = document.getElementById("mobile-menu-close");
+  const overlay = document.getElementById("mobile-menu-overlay");
+  const links = document.querySelectorAll(".mobile-nav-link, #mobile-nav-logo, .mobile-nav-cta a");
+
+  if (!toggleBtn || !overlay) return;
+
+  toggleBtn.addEventListener("click", () => {
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden"; // Prevent background scroll
+  });
+
+  const closeModal = () => {
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  };
+
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+  links.forEach(link => link.addEventListener("click", closeModal));
+}
+
+/* =======================================================
    0. Lenis Smooth Scrolling
    ======================================================= */
 function initLenis() {
   const lenis = new Lenis({
-    duration: 1.2,
+    duration: 0.5,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
     direction: 'vertical',
     gestureDirection: 'vertical',
@@ -207,17 +233,18 @@ function initGSAP() {
    2. Magnetic Buttons (Awwwards Style)
    ======================================================= */
 function initMagneticButtons() {
-  const magnets = document.querySelectorAll('.btn-hero-primary, .btn-hero-secondary, .btn-nav');
+  const magnets = document.querySelectorAll('.btn-hero-primary, .btn-hero-secondary, .btn-nav, .btn-cta-primary, .btn-cta-secondary');
   
   magnets.forEach((magnet) => {
     magnet.addEventListener('mousemove', function(e) {
+      if (window.innerWidth <= 768) return; // Disable magnetic hover on mobile/touch screens
       const position = magnet.getBoundingClientRect();
-      const x = e.pageX - position.left - position.width / 2;
-      const y = e.pageY - position.top - position.height / 2;
+      const x = e.clientX - position.left - position.width / 2;
+      const y = e.clientY - position.top - position.height / 2;
       
       gsap.to(magnet, {
-        x: x * 0.3,
-        y: y * 0.3,
+        x: x * 0.15,
+        y: y * 0.15,
         duration: 0.5,
         ease: "power3.out"
       });
@@ -226,8 +253,8 @@ function initMagneticButtons() {
       const icon = magnet.querySelector('.icon-circle');
       if(icon) {
         gsap.to(icon, {
-          x: x * 0.2,
-          y: y * 0.2,
+          x: x * 0.1,
+          y: y * 0.1,
           duration: 0.5,
           ease: "power3.out"
         });
@@ -235,6 +262,7 @@ function initMagneticButtons() {
     });
 
     magnet.addEventListener('mouseleave', function(e) {
+      if (window.innerWidth <= 768) return;
       gsap.to(magnet, {
         x: 0,
         y: 0,
